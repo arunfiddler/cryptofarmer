@@ -7,11 +7,12 @@ import android.view.View;
 import android.widget.TextView;
 
 public class registeractivity extends AppCompatActivity {
-        TextView tv =(TextView) findViewById(R.id.signup);
+      private TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registeractivity);
+        tv  =(TextView) findViewById(R.id.signup);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
